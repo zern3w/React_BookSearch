@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col, Button, Thumbnail } from 'react-bootstrap';
 
 class Gallery extends Component {
     render() {
@@ -19,8 +20,6 @@ class Gallery extends Component {
                                     <div className="book-text">
                                         {title}
                                     </div>
-                                    
-
                                 </a>
                             )
                         })

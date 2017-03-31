@@ -23,10 +23,15 @@ class Global extends Component {
     }
 
     render() {
+        let icon = 'http://www.777a7.com/img2/nmmxznszdsiistpguldz.png'
         return (
             <div className="Global">
+                 <img 
+                                    src={icon} 
+                                    className="icon"
+                                    />
                 <h2>Book Explorer!</h2>
-                <FormGroup>
+                <FormGroup bsSize="large" className="input">
                     <InputGroup>
                         <FormControl
                             type="text"
@@ -43,6 +48,8 @@ class Global extends Component {
                         </InputGroup.Addon>
                     </InputGroup>
                 </FormGroup>
+                <hr />
+                
                 <Gallery items={ this.state.items } />
             </div>
         )
